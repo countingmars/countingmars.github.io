@@ -14,7 +14,7 @@ subtitle: "Believe get there! ... someday?"
 email: countingmars@gmail.com
 name: Mars Kang
 description: >
-  ...
+  Is it near here?
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -44,7 +44,7 @@ jekyll-archives:
 # disqus_shortname: bencentra
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-112421109-1"
 
 # Category descriptions (for archive pages)
 descriptions:
