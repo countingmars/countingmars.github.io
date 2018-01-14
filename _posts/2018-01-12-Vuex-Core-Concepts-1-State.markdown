@@ -39,7 +39,7 @@ store.state.count 가 변경되면, computed property가 재평가될테고, 관
 모듈 시스템을 사용하게 되면, store를 사용하고 싶은 모든 컴포넌트가 store를 임포트해야 하는데다가 심지어 테스트하고 싶으면 store를 mocking해야 한다.
 
 
-만약 root 컴포넌트에 store 옵션을 적용하면, Vuex는 모든 자식 컴포넌트에도 "inject" 해주는 메커니즘(`Vue.use(Vuex)`)을 제공해준다.:
+다행히도 root 컴포넌트에 store 옵션을 적용하면, Vuex는 모든 자식 컴포넌트에도 "inject" 해주는 메커니즘(`Vue.use(Vuex)`)을 제공해준다:
 ```
 const app = new Vue({
   el: '#app',
@@ -66,11 +66,10 @@ const Counter = {
   }
 }
 ```
-Good ??
 
 ### The mapState Helper
 만약 컴포넌트가 여러개의 상태를 알아야할 상황이라면, 노가다성 반복 작업을 좀 해야할꺼다.
-이런걸 해결하려면 mapState helper라는 computed getter를 생성해주는 놈을 써보자. 타이핑 노가다를 조금 줄여준다.:
+이런걸 해결하려면 mapState helper라는 computed getter를 생성해주는 놈을 써보자. 타이핑 노가다를 조금 줄여준다:
 ```
 // in full builds helpers are exposed as Vuex.mapState
 import { mapState } from 'vuex'
@@ -102,7 +101,8 @@ computed: mapState([
 ### Object Spread Operator
 지금까지는 자식 컴포넌트의 computed 속성에 mapState 객체를 전달했었다. (따라서 local computed property는 사용할 수 없는 상황이다.)
 그런데 만약 자식 컴포넌트의 local computed property와 store.state 둘 다를 써야하는 상황이라면?
-스프레드 연산자(ES6 stage-3 스펙)를 쓰면 엄청 쉬워진다.:
+스프레드 연산자(ES6 stage-3 스펙)를 쓰면 엄청 쉬워진다:
+
 ```
 computed: {
   localComputed () { /* ... */ },
@@ -116,9 +116,7 @@ computed: {
 ### Components Can Still Have Local State
 Vuex 를 사용하겠다는 것이 모든 상태를 Vuex 에 의존하겠다는 것은 아니다.
 앱의 상태값을 Vuex에 넣는게 상태의 변경과 디버깅을 좀더 명시적으로 만들어주긴 하겠지만,
-이런 방식은 간혹 코드를 좀더 길게 만들고 직관적이지 않게(indirect) 만든다.
+이런 방식은 종종 코드를 좀더 길게 만들고 직관적이지 않게(indirect) 만든다.
 
-그러니까 특정 상태가 하나의 컴포넌트에만 속한다면,
-local state로 관리해도 괜찮다.
-
-그러니까 trade-off 가 뭔지 고민하면서, 상황에 맞는 적절한 결정을 하자.
+그러니까 특정 상태가 하나의 컴포넌트에만 속한다면, local state로 관리해도 괜찮다.
+trade-off 가 뭔지 고민하면서, 상황에 맞는 적절한 결정을 내리자.

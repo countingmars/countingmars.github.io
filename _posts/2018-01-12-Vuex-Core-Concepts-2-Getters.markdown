@@ -9,7 +9,7 @@ categories: javascript
 ### Getters
 https://vuex.vuejs.org/en/getters.html
 
-가끔씩, state를 그대로 쓰지 못하는 경우도 있다, 예를 들어 할일 목록을 완료된 것만 필터링해서 숫자를 계산해야 할 수도 있다.:
+가끔씩, state를 그대로 쓰지 못하는 경우도 있다, 예를 들어 할일 목록을 완료된 것만 필터링해서 숫자를 계산해야 할 수도 있다:
 ```
 computed: {
   doneTodosCount () {
