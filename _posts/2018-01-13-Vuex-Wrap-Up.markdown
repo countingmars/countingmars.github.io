@@ -8,7 +8,7 @@ categories: javascript
 
 ### Vuex State
 
-##### Single State Tree
+#### Single State Tree
 Vuex를 사용해서 앱의 모든 컴포넌트와 공유하는 단일 상태 객체(single source of truth)를 도입하자.
 `Vue.use(Vuex)`를 사용해서 모든 자식 컴포넌트에 Single Source of Truth가 **inject**되도록 하자:
 
@@ -29,7 +29,8 @@ const app = new Vue({
 })
 ```
 
-##### Getting Vuex State into Vue Components
+
+#### Getting Vuex State into Vue Components
 컴포넌트에서는 computed property를 사용해서 state에 접근하자:
 
 ```
@@ -44,7 +45,7 @@ const Counter = {
 ```
 
 
-##### The `mapState` HelperObject
+#### The `mapState` HelperObject
 mapState 핼퍼를 쓰면 컴포넌트의 computed property에 state에 대한 핼퍼 객체를 할당할 수 있으므로, computed getter를 쉽게 만들 수 있었다.
 
 그런데 만약, 로컬 computed property와 Vuex State의 computed property를 둘 다를 쓰고 싶다면 ES6 스프레드 연산자를 활용하자:
@@ -59,7 +60,8 @@ computed: {
 }
 ```
 
-##### Components Can Still Have Local State
+
+#### Components Can Still Have Local State
 Vuex의 비용이 저렴하진 않다는 걸 기억하자.
 
 ### Getters
@@ -134,7 +136,8 @@ store.commit('increment')
 ```
 파라미터인 'increase'를 타입이라고 하며, 이에 대응하는 함수를 핸들러라고 했었다.
 
-##### Commit with Payload
+
+#### Commit with Payload
 추가적인 파라미터도 전달할 수 있는데, 이를 payload 라고 부른다:
 ```
 // ...
@@ -154,7 +157,8 @@ store.commit({
 ```
 이 방법이 mutation 로그를 볼 때, 더 유용하다.
 
-##### Mutations Must Be Synchronous
+
+#### Mutations Must Be Synchronous
 Mutation 핸들러는 반드시 동기화 코드만 처리해야 한다. 비동기 코드를 가진 mutation 핸들러는
 핸들러 호출 결과를 로깅한다고 가정했을 때 before와 after 스냅샷이 정확하지 않게 되므로 상태 추적이 어려워진다.
 
@@ -190,7 +194,9 @@ actions: {
   }
 }
 ```
-##### Dispatching Actions
+
+
+#### Dispatching Actions
 Actions는 store.dispatch 메서드로 트리거된다:
 ```
 store.dispatch('increment')

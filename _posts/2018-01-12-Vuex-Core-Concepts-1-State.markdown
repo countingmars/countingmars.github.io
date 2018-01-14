@@ -10,14 +10,14 @@ categories: javascript
 https://vuex.vuejs.org/en/state.html
 
 
-#### Single State Tree
+### Single State Tree
 Vuex 는 단일 상태 객체인 Tree 를 사용한다. 그러니까 하나의 앱의 상태를 관리하는 하나의 객체가 제공된다는 말이지. 이것을 유식하게 single source of truth 라고 부르는거 같다.
 
 일단 이런 형태가 가장 직관적으로 상태를 표현한다고 볼 수 있고, 디버깅 할 때도 현재 상태를 쉽게 볼 수 있다.
 
 그리고 하나의 상태 트리(그러니까 일종의 전역변수 느낌)가 왜 모듈화랑 충돌하지는 않는지는 나중에 살펴보자.
 
-#### Getting Vuex State into Vue Components
+### Getting Vuex State into Vue Components
 Vue 컴포넌트에서 어떻게 Store (Single State Tree를 의미)의 상태를 디스플레이할까?
 Vuex store는 reactive 하기 때문에, 상태를 "조회"하는 가장 쉬운 방법은 computed property를 사용하는거다:
 ```

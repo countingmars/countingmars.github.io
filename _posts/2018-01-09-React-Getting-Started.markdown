@@ -13,12 +13,12 @@ https://reactjs.org/docs/add-react-to-a-new-app.html
 
 
 ### Create React App
-##### create-react-app 설치하기
+#### create-react-app 설치하기
 create-react-app 을 사용하면 쉽게 react app을 초기화할 수 있다.
 - node 버전 6 이상이 필요함.
 
 
-##### npm
+#### npm
 {% highlight bash %}
 npm install -g create-react-app
 create-react-app my-app
@@ -29,7 +29,7 @@ npm start
 
 브라우저에 React 샘플 앱이 렌더링될거다.
 
-##### npx
+#### npx
 npm 버전 5.2.0+ 이면, npx 를 사용할 수 있단다.
 {% highlight bash %}
 npx create-react-app my-app
@@ -37,7 +37,7 @@ cd my-app
 npm start
 {% endhighlight %}
 
-##### Production 빌드하기
+#### Production 빌드하기
 npm run build 를 실행하면 프로덕션 배포용 build를 생성해준다. (build 폴더에 앱 빌드가 생성됨.)
 
 
