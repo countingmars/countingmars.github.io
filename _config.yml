@@ -54,6 +54,9 @@ descriptions:
   - cat: java
     desc: "Posts describing Java related things"
 
+  - cat: tools
+    desc: "Posts describing supporting tools related things"
+
 # Social icons and sharing options
 #
 # Social settings are used in two places:
