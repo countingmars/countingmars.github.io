@@ -45,9 +45,9 @@ https://?.ngrok.io -> localhost:8082
 나의 로컬 서버에 ngrok 을 사용해서 접속했더니, 짠~ 하고 `Invalid Host Header` 라는 오류 메세지가 떴다.
 
 구글링을 해보니 몇 가지 솔루션이 나오는데 다음과 같았다.
-1. `ngrok http 8080 -host-header="localhost:8080"`
-2. `ngrok http --host-header=rewrite 8080`
-3. `devServer.disableHostCheck = true`
+1. ngrok http 8080 -host-header="localhost:8080"
+2. ngrok http --host-header=rewrite 8080
+3. devServer.disableHostCheck = true
 
 나는 webpack.config.js 에서 `devServer { disableHostCheck: true }` 를 사용해서 해결했다.
 
