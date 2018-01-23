@@ -27,7 +27,7 @@ https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d
 addNewEmployee 는 addNew 라는 행위와 Employee 라는 리소스를 포함하고 있다.
 
 #### Then what is the correct way?
-/companies 라는 endpoint 가 행위가 포함되어 있지 좋은 예제라고 볼 수 있다.
+/companies 라는 endpoint 가 좋은 예제라고 볼 수 있다.
 
 그렇다면 어떻게 행위(action)을 정의할 수 있을까?
 
