@@ -5,15 +5,19 @@ date:   2018-04-20 11:25:01
 author: Mars
 categories: tools
 ---
-
+ 
 ### 마이크로서비스
 마이크로서비스란 작고 자율적으로 협업하는 서비스를 의미하며, 분산 시스템과 SOA의 개념을 더 깊이 내포하고 있다. 
 
 "마이크로서비스란 2주 안에 재작성될 수 있는 것" --존 이브스
+
 "충분히 작아서 더 이상 작아질 수 없는 크기" --샘 뉴먼
+
+
 
 ### 마이크로서비스의 부상
 Domain Driven Design, Continuously Delivery, On-demand Virtualization, 인프라스트럭처 자동화, 작고 자율적인 팀, System at Scale 의 발전으로 마이크로서비스 아키텍쳐가 대세가 되었다.
+
 
 ### 마이크로서비스의 특징
 마이크로서비스는 자율적이어야 하며, 따라서 독립적으로 동작할 수 있어야 하므로 중복을 두려워하지 않는다.
@@ -65,6 +69,8 @@ Single Responsibility Principle은 "같은 이유로 변경되는 것을 한 곳
 
 다음 편으로는 마이크로서비스의 기술적 고려사항을 다루겠다.
 
+
+* 이 글은 샘 뉴먼의 Building Microservices 를 많이 참고한 것입니다.   
 
  
 
