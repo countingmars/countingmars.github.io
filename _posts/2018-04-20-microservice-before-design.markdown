@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "마이크로서비스 설계 고려사항"
+title:  "마이크로서비스를 설계하기 전에"
 date:   2018-04-20 19:25:01
 author: Mars
 categories: tools
