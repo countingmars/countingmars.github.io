@@ -96,3 +96,4 @@ These status codes represent that the client has raised a faulty request.
 API 가 이미 배포된 상태에서 업그레이드를 시도하면 API 호환성에 문제가 발생할 수 있다.
 `http://api.yourservice.com/v1/companies/34/employees` 가 좋은 예제인데,
 API 경로에 버전 정보를 넣는 것이다. 만약 API 사용법이 달라진다면 v2 혹은 v1.x.x 형태로 추가하자.
+
