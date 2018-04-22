@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spring Boot, Netflix OSS, Kafka 마이크로서비스 구축하기 - Part 2: Message Broker and User service"
+title:  "Spring Boot, Netflix OSS, Kafka 마이크로서비스 구축하기 - Part 2: Message Broker and User Service"
 date:   2018-04-20 23:25:01
 author: Mars
 categories: tools
@@ -64,7 +64,7 @@ $ echo dump | nc localhost 2181 | grep brokers
 ### User Service
 이제 우리는 Kafka를 구동시켰으므로 User 마이크로서비스를 만들 수 있게 되었다. 
 Part 1에서 이미 말했듯이 User 마이크로서비스는:
-1. 자기 스스로를 Service registry (Eureka) 에 등록한다.
+1. 자기 스스로를 Service Registry (Eureka)에 등록한다.
 2. Config 서버(Spring Cloud Config)에서 설정을 가져온다. 
 3. 2개의 endpoints를 가진다 
 	- /member : POST 요청은 신규 사용자를 등록한다
@@ -106,8 +106,8 @@ Config 서버와 마찬가지로, Discovery Client 를 활성화시키기 위해
 ##### /bootstrap.yml
 설정파일에 프로젝트 이름과 포트를 지정하자. 
 
-여기서 새로 추가되는 것은 cloud config discovery 이다. User 마이크로서비스는 'ms-config-server'라는 키 값으로 Service Registry로부터 Config 서버의 위치를 찾을 것이다. 
-그리고 url 혹은 port를 하드코딩할 필요가 없다. 
+여기서 새로 추가되는 것은 cloud > config > discovery 이다. User 마이크로서비스는 'ms-config-server'라는 키 값으로 Service Registry로부터 Config 서버의 위치를 찾을 것이다. 
+덕분에 url 혹은 port를 하드코딩할 필요가 없다. h2 메모리 데이터베이스에 대한 설정이나, Kafka에 대한 설정은 모두 Config 서버로 부터 읽어오게 된다. 
 
 ```
 server:
@@ -122,7 +122,7 @@ spring:
         service-id: ms-config-server
 ```
 
-h2 메모리 데이터베이스에 대한 설정이나, Kafka에 대한 설정은 모두 Config 서버로 부터 읽어오게 된다. 
+ 
 
 
 ##### /ms-user.yml
@@ -205,10 +205,10 @@ public ResponseEntity<User> register(@RequestBody User input) {
 ##### SenderConfig.java 
 이제 sender 설정을 자세히 살펴보자. 
 Kafka 토픽에 메시지 생산을 할려면 KafkaTemplate 이 필요하다. 
-KafkaTemplate은 ProducerFactory를 필요로 하는데 Producer를 생성하기 위한 전략(strategy)를 설정해야 한다.
+KafkaTemplate은 ProducerFactory를 필요로 하는데, Producer 생성 전략(strategy)를 설정해야 한다.
 
-ProducerFactory는 속성 설정을 위해 맵을 사용한다.
-속성 중에 가장 중요한 것은 BOOTSTRAP_SERVERS_CONFIG, KEY_SERIALIZER_CLASS_CONFIG, VALUE_SERIALIZER_CLASS_CONFIG 이다.
+ProducerFactory는 이러한 전략을 맵으로 설정한다. 
+전략을 설정하기 위한 속성 중에 가장 중요한 것은 BOOTSTRAP_SERVERS_CONFIG, KEY_SERIALIZER_CLASS_CONFIG, VALUE_SERIALIZER_CLASS_CONFIG 이다.
 
 ```
 public class SenderConfig {
