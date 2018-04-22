@@ -11,7 +11,7 @@ categories: tools
 
 
 ### Message Broker (Kafka & ZooKeeper)
-Kafka 는 분산 시스템이고 Zookeeper를 이용해서 클러스터 노드, topic, partition의 상태를 추적한다.
+Kafka는 분산 시스템이고 Zookeeper를 이용해서 클러스터 노드, topic, partition의 상태를 추적한다.
 하지만 이 예제에서는 Kafka의 분산 기능을 사용하지는 않을 예정이다.  
 
 Kafka를 사용하기 전에 Zookeeper를 설치하는 것은 필수이다. 아래 명령은 우분투 16.04에 Zookeeper를 설치하는 명령이다.
