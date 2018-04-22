@@ -7,7 +7,6 @@ categories: tools
 ---
 
 원본 https://dzone.com/articles/building-microservices-with-netflix-oss-apache-kaf
-
 소스 https://github.com/isilona/microservices
 
 
