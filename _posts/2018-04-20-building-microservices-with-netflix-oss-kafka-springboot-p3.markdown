@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spring Boot, Netflix OSS, Kafka 마이크로서비스 구축하기 - Part 3:  Email Service and Gateway"
+title:  "Spring Boot, Netflix OSS, Kafka 마이크로서비스 구축하기 - Part 3: Email Service and Gateway"
 date:   2018-04-21 11:25:01
 author: Mars
 categories: tools
