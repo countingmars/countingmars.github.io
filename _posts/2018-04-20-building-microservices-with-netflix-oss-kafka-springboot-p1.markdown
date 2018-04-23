@@ -45,7 +45,7 @@ Netflix Eureka 는 이러한 레지스트리의 좋은 전형이며, 등록된 �
 ##### /pom.xml
 
 
-SPRING INITIALIZER 로 새로운 프로젝트(ms-discovery)를 만든 후에 "Eureka Server" 의존성을 추가하자.
+SPRING INITIALIZR 로 새로운 프로젝트(ms-discovery)를 만든 후에 "Eureka Server" 의존성을 추가하자.
 pom.xml 에 자동으로 spring-cloud-starter-eureka-server 의존성이 추가되어야만 한다.
 
 
