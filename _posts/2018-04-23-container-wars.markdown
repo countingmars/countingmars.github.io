@@ -61,3 +61,4 @@ AWS의 container management service로써, Amazon ECS는 Docker-compatible 서�
 Containerized applications을 EC2 인스턴스에서 실행할 수 있도록 해주는 Kube와 Swarm의 대안이다.
 
 그런데 서울 리전에서는 아직 기능이 별로 없다.
+http://www.baeldung.com/spring-cloud-sleuth-single-application
