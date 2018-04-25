@@ -51,7 +51,7 @@ spring.application.name=Baeldung Sleuth Tutorial
 ```
 
 ### 3. Sleuth Configurations
-Spring Cloud Sleuth는 Brave를 사용해서 인입된 요청에 고유한 ID를 추가한다.
+Spring Cloud Sleuth는 [Brave|https://github.com/openzipkin/brave]를 사용해서 인입된 요청에 고유한 ID를 추가한다.
 게다가 Spring 팀은 이 추적용 ID를 쓰레드 경계에도 공유하는 기능을 추가했다.
 
 
