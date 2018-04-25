@@ -389,4 +389,7 @@ Sleuth가 작업을 위해 trace id와 span id를 새로 만들었음을 확인�
 
 ### 4. Conclusion
 이제 Sleuth 사용법은 충분히 알았을테니 RestTemplate, messaging protocol, Zuul 등과 연동하는 방법이 궁금할거다.
+Sleuth는 이러한 부분도 지원을 한다.
+
+
 
