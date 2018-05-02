@@ -25,7 +25,7 @@ linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000
 
 
 그리고 이러한 linear access는 대부분 예측가능하기에  
-read-ahead(prefetch large block multiples), write-behind(group smaller writes into large physical writes) 기술을 통해 OS에 의해 최적화된다.
+[read-ahead, write-behind|http://www.cs.cornell.edu/courses/cs415/1999fa/slides-fs/text40.htm] 기술을 통해 OS에 의해 최적화된다.
 
 ![디스크와 메모리 Access 성능비교](https://deliveryimages.acm.org/10.1145/1570000/1563874/jacobs3.jpg )
 
