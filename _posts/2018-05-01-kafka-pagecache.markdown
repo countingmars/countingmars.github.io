@@ -17,7 +17,7 @@ Kafka가 메시지를 저장하고 캐싱할 때 파일시스템에 크게 의�
 ​
 
 디스크 성능은 하드 드라이브의 disk seek 대기시간(latency)에 의해 결정되는데 
-linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000배 이상 차이가 발생할 수 있다. 
+linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000배 이상 빠를 수 있다. 
 (JBOD with six 7200rpm SATA RAID-5 기준)  
 
 
