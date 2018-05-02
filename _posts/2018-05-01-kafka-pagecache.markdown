@@ -6,7 +6,7 @@ author: Mars
 categories: tools
 ---
 
-원본 https://kafka.apache.org/documentation/#design_filesystem
+원본 <https://kafka.apache.org/documentation/#design_filesystem>
 
 
 ### Persistence
@@ -15,7 +15,6 @@ categories: tools
 Kafka가 메시지를 저장하고 캐싱할 때 파일시스템에 크게 의존한다.
 "disks are slow"라는 통념 때문에 Kafka의 성능을 회의적으로 바라보겠지만, 어떻게 사용하느냐에 따라 (기대보다) 더 느려질 수도 있고 네트웍 만큼 빨라질 수도 있다.  
 ​
-
 디스크 성능은 하드 드라이브의 disk seek 대기시간(latency)에 의해 결정되는데 
 linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000배 이상 빠를 수 있다. 
 (JBOD with six 7200rpm SATA RAID-5 기준)  
