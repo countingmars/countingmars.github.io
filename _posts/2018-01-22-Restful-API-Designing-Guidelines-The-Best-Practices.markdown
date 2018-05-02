@@ -7,7 +7,7 @@ categories: tools
 ---
 
 
-https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9
+<https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9>
 
 ### API endpoint
 회사와 직원에 대한 API 를 설계해보자.

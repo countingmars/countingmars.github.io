@@ -8,7 +8,7 @@ categories: java
 
 
 ### Spring Boot Server Tests
-https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html
+<https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html>
 
 #### A Full Running Server For Tests
 서버를 띄워서(a full running server) 테스트할 때는:

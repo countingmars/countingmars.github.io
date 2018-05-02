@@ -9,7 +9,7 @@ categories: javascript
 
 
 ### Installation
-https://reactjs.org/docs/add-react-to-a-new-app.html
+<https://reactjs.org/docs/add-react-to-a-new-app.html>
 
 
 ### Create React App

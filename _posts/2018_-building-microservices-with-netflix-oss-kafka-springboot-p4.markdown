@@ -6,7 +6,7 @@ author: Mars
 categories: tools
 ---
 
-원본 https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot-part-4-security  
+원본 <https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot-part-4-security>  
 
 
 마이크로서비스의 그룹을 만들었으므로, 다음 단계는 이 시스템에 보안을 적용하는 거다.

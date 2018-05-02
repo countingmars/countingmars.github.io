@@ -6,7 +6,7 @@ author: Mars
 categories: tools
 ---
 
-원본 http://www.baeldung.com/spring-cloud-sleuth-single-application
+원본 <http://www.baeldung.com/spring-cloud-sleuth-single-application>
 
 
 ### 1. Overview

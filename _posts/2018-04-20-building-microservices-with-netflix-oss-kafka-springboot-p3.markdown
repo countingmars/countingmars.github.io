@@ -6,7 +6,7 @@ author: Mars
 categories: tools
 ---
 
-원본 https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot-part-3-email-service  
+원본 <https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot-part-3-email-service>  
 
 
 ### Email Service

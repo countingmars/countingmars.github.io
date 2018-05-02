@@ -6,7 +6,7 @@ author: Mars
 categories: tools
 ---
 
-원본 https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot-part-2  
+원본 <https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot-part-2>  
 
 
 

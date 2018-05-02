@@ -6,7 +6,7 @@ author: Mars
 categories: tools
 ---
 
-원본 https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth
+원본 <https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth>
 
 
 
