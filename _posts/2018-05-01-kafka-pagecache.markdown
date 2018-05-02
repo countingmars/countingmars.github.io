@@ -54,4 +54,4 @@ linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000
 
 
 이러한 pagecache-centric 설계 스타일은 여기에 설명되어 있다: 
-http://varnish-cache.org/docs/trunk/phk/notes.html  
+<http://varnish-cache.org/docs/trunk/phk/notes.html>  
