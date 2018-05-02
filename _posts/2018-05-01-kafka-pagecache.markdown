@@ -47,7 +47,8 @@ linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000
 코드 레벨에서 캐쉬와 파일시스템 사이의 일관성을 유지할 필요가 없다. 
 만약 디스크를 linear reads로 쓴다면 read-ahead는 이 캐쉬를 미리 준비해놓을 것이다!
 
-​### pagecache-centric design
+### pagecache-centric design
+
 이제 시스템의 설계가 단순해지는데, 모든 데이터는 파일시스템에 마치 로그처럼 즉시 쓰여지고(디스크 flush 없이), 
 이것이 의미하는 바는 데이터가 커널의 pagecache로 옮겨졌다는 것을 의미한다.
 
