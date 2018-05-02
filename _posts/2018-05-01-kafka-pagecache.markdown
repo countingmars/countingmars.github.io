@@ -14,9 +14,11 @@ categories: tools
 
 Kafka가 메시지를 저장하고 캐싱할 때 파일시스템에 크게 의존한다.
 "disks are slow"라는 통념 때문에 Kafka의 성능을 회의적으로 바라보겠지만, 어떻게 사용하느냐에 따라 (기대보다) 더 느려질 수도 있고 네트웍 만큼 빨라질 수도 있다. 
+
+
 ​
 
-#### Linear access performance and read-ahead, write behind
+### Linear access performance and read-ahead, write behind
 디스크 성능은 하드 드라이브의 disk seek 대기시간(latency)에 의해 결정되는데 
 linear write의 성능(600MB/sec)은 random write의 성능(100k/sec)보다 6000배 이상 빠를 수 있다. 
 (JBOD with six 7200rpm SATA RAID-5 기준)  
@@ -30,7 +32,7 @@ read-ahead(prefetch large block multiples), write-behind(group smaller writes in
 위 이미지는 순차 디스크 접근(sequential disk access)이 랜덤 메모리 접근(random memory access)보다 경우에 따라서 더 빠를 수 있다는 것을 설명한다.
 
 ​
-#### pagecache for caching disk
+### pagecache for caching disk
 ​또한 이러한 성능 편차를 극복하기 위해, 최신 OS들은 disk caching에 메인 메모리를 적극적으로 활용하게 되었다.
 최신 OS는 모든 free 메모리를 디스크 캐싱에 투입할 것이다. (메모리 반환 시에 성능저하도 거의 없다.) 
 모든 디스크 사용은 이 단일화된(unified) 캐쉬를 거치게 될 것이다.
@@ -45,7 +47,7 @@ read-ahead(prefetch large block multiples), write-behind(group smaller writes in
 코드 레벨에서 캐쉬와 파일시스템 사이의 일관성을 유지할 필요가 없다. 
 만약 디스크를 linear reads로 쓴다면 read-ahead는 이 캐쉬를 미리 준비해놓을 것이다!
 
-​#### pagecache-centric design
+​### pagecache-centric design
 이제 시스템의 설계가 단순해지는데, 모든 데이터는 파일시스템에 마치 로그처럼 즉시 쓰여지고(디스크 flush 없이), 
 이것이 의미하는 바는 데이터가 커널의 pagecache로 옮겨졌다는 것을 의미한다.
 
