@@ -26,19 +26,17 @@ read-ahead(prefetch large block multiples), write-behind(group smaller writes in
 
 ![디스크와 메모리 Access 성능비교](https://deliveryimages.acm.org/10.1145/1570000/1563874/jacobs3.jpg )
 
-​
 위 이미지는 순차 디스크 접근(sequential disk access)이 랜덤 메모리 접근(random memory access)보다 경우에 따라서 더 빠를 수 있다는 것을 설명한다.  
 
 ​
-
 ​또한 이러한 성능 편차를 극복하기 위해, 최신 OS들은 disk caching에 메인 메모리를 적극적으로 활용하게 되었다.
 최신 OS는 모든 free 메모리를 디스크 캐싱에 투입할 것이다. (메모리 반환 시에 성능저하도 거의 없다.) 
 모든 디스크 사용은 이 단일화된(unified) 캐쉬를 거치게 될 것이다. 
- 
-​
+
+
 게다가 JVM을 사용한다면 메모리 오버헤드는 실제 데이터 사이즈의 두배 이상이 될 수도 있는데다가 
 가비지 콜렉션 비용 또한 메모리 소비 비용에 따라 증가할 것이다.  
- 
+
 ​
 따라서 pagecache에 기반한 파일 시스템을 사용하는 것이 in-memory 캐쉬를 사용하는 것보다 월등히 유리할 것이다. 
 심지어 캐쉬의 사이즈는 32GB 장비에서 28-30GB까지 사용할 수 있고, 
