@@ -77,7 +77,14 @@ server.port=8090
 
 ### Create an edge service
 이제 edge 서비스를 개발하자.
-Spring Cloud Netflix는 embedded Zuul proxy을 포함하고 있다. 
+Spring Cloud Netflix는 embedded Zuul proxy을 포함하고 있다.
+
+gateway/build.gradle 파일의 핵심은 아래의 의존성 설정이다.
+```
+compile('org.springframework.cloud:spring-cloud-starter-zuul')
+compile('org.springframework.boot:spring-boot-starter-web')
+```
+	 
 @EnableZuulProxy 어노테이션을 사용하면 어플리케이션을 reverse proxy로 만들어주며, 요청을 다른 서비스로 포워딩해준다.
 
 GatewayApplication.java는 아래의 형태이다.
