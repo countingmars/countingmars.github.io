@@ -86,8 +86,7 @@ public void operations() {
 ```
 
 ### Java8 Stream With Mono And Flux
-자바8 스트림 연산자를 Mono와 Flux에 사용해보자.
-하나의 Mono를 다른 Mono로 맵핑해보자. 
+자바8 스트림 연산자를 Mono와 Flux에 사용해서 하나의 Mono를 다른 Mono로 맵핑해보자. 
 ```
 Mono<String> monoMap = Mono.just("James").map(s -> s.toLowerCase());
 ```
