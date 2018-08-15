@@ -36,7 +36,7 @@ dependencies {
 ```
 
 ### Publishers (Mono and Flux)
-Mono와 Flux는 Publisher 인터페이스를 구현한 구현체이다. Flux는 0개 ~ N개의 아이템을 관찰하며(observe, push 이벤트 발생횟수), Mono는 0개 ~ 1개의 아이템을 관찰한다. 최대 0개의 아이템을 나타내는(hinting) Mono<Void>도 있다.
+Mono와 Flux는 Publisher 인터페이스를 구현한 구현체이다. Flux는 0개 ~ N개의 아이템을 관찰하며(observe, push 이벤트 발생횟수), Mono는 0개 ~ 1개의 아이템을 관찰한다. 최대 0개의 아이템을 나타내는(hinting) `Mono<Void>`도 있다.
 
 테스트 코드로 이 라이브러리를 어떻게 쓰는지 확인해보자.
 ```
