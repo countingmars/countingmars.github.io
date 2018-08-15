@@ -96,19 +96,21 @@ StepVerifier로 `monoMap`이 생성되었음을 검증하고, 이후에 마지�
 -> 역주: 모든 Publisher(Mono와 Flux)는 생성된 이후에 누군가가 Subscribe을 시작해야만 동작하기 시작한다. 
 따라서 StepVerifier는 Publisher를 Subscribe함으로써 Publisher가 동작하도록 만들고, 그 동작을 검사(verify)한다. 
 
-다음은 Flux<String> 타입의 객체를 생성하고 "Joel"과 "Kyle"을 방출하도록 설정했으며, 
-filter() 메서드를 통해 대문자 "K"로 시작하는 문자열만 통과시킨 후 
-map() 메서드를 통해 소문자 문자열을 방출하는 Flux로 맵핑시켰다. 
+다음은 `Flux<String>` 타입의 객체를 생성하고 "Joel"과 "Kyle"을 방출하도록 설정했으며, 
+`filter()` 메서드를 통해 대문자 "K"로 시작하는 문자열만 통과시킨 후 
+`map()` 메서드를 통해 소문자 문자열을 방출하는 Flux로 맵핑시켰다. 
 
 -> 역주: 자바8 스트림 연산자 `filter()`, `map()` 등등을 사용할 때, 
 Publisher가 방출하는 객체를 조작할 수 있지만, 그 결과는 여젼히 Publisher 타입임을 숙지하자.
 
-예시
+아래 코드에서 `map()` 메서드의 람다에서 문자열 s를 대문자로 맵핑했지만 반환값은 `Mono<String>`임을 다시 확인해보자.
 ```
 Mono<String> result = Mono.just("a").map(s -> s.toUpperCase());
-// map() 메서드의 람다에서 문자열 s를 대문자로 맵핑했지만 반환값은 Mono<String>임을 확인할 수 있다.
 
 ```
+
+### Combining Fluxes
+-> 역주: 앞으로 소개할 Flux.zip(), Flux,merge(), Flux.concat()은 여러 Flux를 조합할 때 사용하는 연산들이다.
 
 
 ```
@@ -134,9 +136,6 @@ public void zipping() {
     StepVerifier.create(namesWithDelay).expectNext("Mr. John Doe", "Mrs. Jane Blake").verifyComplete();
 }
 ```
-
-### Combining Fluxes
--> 역주: 앞으로 소개할 Flux.zip(), Flux,merge(), Flux.concat()은 여러 Flux를 조합할 때 사용하는 연산들이다.
 
 `Flux.zip`은 여러 Flux 객체의 방출 순서를 맞춰준다(combine). 즉 결합된 모든 Flux가 n번째 아이템을 방출한 시점을 결합시켜준다. 
 이 예제에서는 호칭(mr, mrs) Flux, firstName Flux, lastName Flux를 zip()하고, 
