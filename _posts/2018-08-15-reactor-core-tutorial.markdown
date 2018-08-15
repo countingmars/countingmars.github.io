@@ -172,7 +172,9 @@ public void interleave() {
 
 `Flux.mergeWith()`는 두 개의 Flux를 독립성을 유지한 채로(interleaved sequence)병합해준다.
 
--> 역주: , interleaver가 무슨 의미인지 와닫지 않아서 상호간에(inter) 떨어진채로(leave)라는 의미로 받아들였다.
+
+-> 역주: interleaver가 무슨 의미인지 와닫지 않아서 상호간에(inter) 떨어진채로(leave)라는 의미로 받아들였다.
+
 
 따라서 딜레이가 추가된 Flux.just("A", "B")와 Flux.just("C", "D")를 병합(mergeWith)하면 객체 방출 순서가 C, D, A, B 순이 된다.
 
