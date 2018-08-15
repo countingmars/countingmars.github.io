@@ -139,7 +139,7 @@ public void zipping() {
 
 `Flux.zip`은 여러 Flux 객체의 방출 순서를 맞춰준다(combine). 
 즉 결합된 모든 Flux가 n번째 아이템을 방출한 시점을 (가장 늦게 방출하는 Flux의 속도에 맞춰) 일치시켜준다. 
-이 예제에서는 호칭(mr, mrs) Flux, firstName Flux, lastName Flux를 zip()하고, 
+이 예제에서는 호칭(mr, mrs) Flux, firstName Flux, lastName Flux를 `zip()`하고, 
 이를 조합하여 full name을  방출하는 Flux를 생성했다.
 아래 코드를 다시 감상해봐라.
 ```
