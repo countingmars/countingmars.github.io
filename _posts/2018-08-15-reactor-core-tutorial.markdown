@@ -182,7 +182,7 @@ public void interleave() {
 
 
 ### Blocking Publisher
-마지막으로 Publisher가 객체를 방출할 때 까지 무한히 대기(block)하는 방법을 알아보자. 
+마지막으로 Publisher가 객체를 방출할 때 까지 무기한 대기(block)하는 방법을 알아보자. 
 `Mono.block()`을 호출하거나 `Flux.toIterable().iterator().next()`를 호출하는 것이다. 
 ```
 @Test
