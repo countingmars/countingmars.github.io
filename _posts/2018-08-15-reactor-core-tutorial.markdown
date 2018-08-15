@@ -92,8 +92,9 @@ Mono<String> monoMap = Mono.just("James").map(s -> s.toLowerCase());
 ```
 위 코드는 문자열을 방출하는 Mono를 소문자 문자열을 방출하는 Mono로 맵핑하는 예제이다.
 StepVerifier로 `monoMap`이 생성되었음을 검증하고, 이후에 마지막 Mono가 "james"가 방출하였음을 검증하고 있다.
--> 역주: 모든 Publisher(Mono와 Flux)는 생성된 이후에 누군가가 Subscribe을 시작해야 동작한다. 
-StepVerifier는 생성된 Publisher를 Subscribe함을 예상해볼 수 있다. 
+
+-> 역주: 모든 Publisher(Mono와 Flux)는 생성된 이후에 누군가가 Subscribe을 시작해야만 동작하기 시작한다. 
+따라서 StepVerifier는 Publisher를 Subscribe함으로써 Publisher가 동작하도록 만들고, 그 동작을 검사(verify)한다. 
 
 다음은 Flux<String> 타입의 객체를 생성하고 "Joel"과 "Kyle"을 방출하도록 설정했으며, 
 filter() 메서드를 통해 대문자 "K"로 시작하는 문자열만 통과시킨 후 
