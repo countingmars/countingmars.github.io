@@ -149,6 +149,7 @@ Flux<String> names = Flux
 ```
 
 `Flux.zip()`을 사용해서 여러 Flux의 이벤트 방출 타이밍을 맞출 수 있음을 확인했다. 이제 5ms 딜레이를 가지는 Flux를 사용해서, `Flux.zip()` 메서드가 하는 일을 다시 확인해보자.
+
 `Flux.interval(Duration.ofMillis(5))`로 딜레이를 만드는 Flux를 생성했다. 
 `firstNames.zipWith(delay, (s, l) -> s)`로 두 개의 Flux의 타이밍을 맞췄고, 람다 표현식으로는 firstNames에서 방출한 객체를 반환하도록 하여, 최종적으로 firstName을 방출하는 Flux를 생성했다.
 딜레이를 주는 Flux가 추가되었지만 여전히 여러 Flux의 순서가 잘 결합됨을 확인할 수 있다.
