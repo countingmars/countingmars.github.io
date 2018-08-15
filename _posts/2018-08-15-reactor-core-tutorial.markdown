@@ -152,7 +152,7 @@ Flux<String> names = Flux
 
 아래 코드에서는 `Flux.interval(Duration.ofMillis(5))`로 딜레이를 만드는 Flux를 생성했다. 
 `firstNames.zipWith(delay, (s, l) -> s)`로 두 개의 Flux의 타이밍을 맞췄고, 람다 표현식으로는 firstNames에서 방출한 객체를 반환하도록 하여, 최종적으로 firstName을 방출하는 Flux를 생성했다.
-딜레이를 주는 Flux가 추가되었지만 여전히 여러 Flux의 순서가 잘 결합됨을 확인할 수 있다.
+딜레이를 주는 Flux가 추가되었지만 여전히 여러 Flux의 방출 순서가 일치됨을 확인할 수 있다.
 ```
 @Test
 public void interleave() {
