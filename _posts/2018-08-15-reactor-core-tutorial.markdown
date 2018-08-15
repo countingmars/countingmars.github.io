@@ -70,7 +70,7 @@ public void initialized() {
 Flux<String> 타입의 객체 nonEmptyFlux를 생성하여 "John", "Mike", "Sarah"를 방출하도록 했다.
 StepVerifier로 순서대로 문자열이 방출하는 것을 검사했다.
 
-마지막으로 Array를 이용하여 Flux를 생성하도록 했으며, 마찬가지 스트림의 오브젝트 방출을 검증했다. 
+마지막으로 Array를 이용하여 Flux를 생성하도록 했으며, StepVerifier로 오브젝트 방출 순서를 검증했다. 
 
 ```
 @Test
