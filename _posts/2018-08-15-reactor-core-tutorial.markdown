@@ -110,7 +110,7 @@ Mono<String> result = Mono.just("a").map(s -> s.toUpperCase());
 ```
 
 ### Combining Fluxes
--> 역주: 앞으로 소개할 Flux.zip(), Flux,merge(), Flux.concat()은 여러 Flux를 조합할 때 사용하는 연산들이다.
+-> 역주: 앞으로 소개할 `Flux.zip()`, `Flux,merge()`, `Flux.concat()`은 여러 Flux를 조합할 때 사용하는 연산들이다.
 
 
 ```
@@ -165,7 +165,8 @@ public void interleave() {
  StepVerifier.create(nonInterleavedFlux).expectNext("A", "B", "C", "D").verifyComplete();
 }
 ```
-Interleaving은 성능 향상을 목적으로 비-순차적으로 데이터가 쓰여지는 개념이다. 여러 Flux가 조합되었을 때, 개별 Flux의 방출(emit)을 독자적으로 수행할 수 있도록 해준다. 
+
+*Interleaving*은 성능 향상을 목적으로 비-순차적으로 데이터가 쓰여지는 개념이다. 여러 Flux가 조합되었을 때, 개별 Flux의 방출(emit)을 독자적으로 수행할 수 있도록 해준다. 
 
 `Flux.mergeWith()`는 두 개의 Flux를 독립성을 유지한 채로(interleaved sequence)병합해준다.
 
@@ -177,7 +178,8 @@ Interleaving은 성능 향상을 목적으로 비-순차적으로 데이터가 �
 
 
 ### Blocking Publisher
-마지막으로 Publisher가 객체를 방출할 때 까지 무한히 대기(block)하는 방법을 알아보자. `Mono.block()`을 호출하거나 `Flux.toIterable().iterator().next()`를 호출하는 것이다. 
+마지막으로 Publisher가 객체를 방출할 때 까지 무한히 대기(block)하는 방법을 알아보자. 
+`Mono.block()`을 호출하거나 `Flux.toIterable().iterator().next()`를 호출하는 것이다. 
 ```
 @Test
 public void block() {
