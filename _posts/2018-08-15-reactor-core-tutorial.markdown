@@ -48,9 +48,8 @@ public void empty() {
     StepVerifier.create(emptyFlux).verifyComplete();
 }
 ```
-`Mono.empty()`로 비어있는 Mono를 생성했다. 마찬가지로 `Flux.empty()`로 비어있는 Flux를 생성했으며, 이를 확인하기 위해 StepVerifier를 사용했다. Publisher인 emptyMono 객체와 emptyFlux 객체는 어떠한 객체도 방출(emit)하지 않고 완료되었다.
+`Mono.empty()`로 비어있는 Mono를 생성했다. 마찬가지로 `Flux.empty()`로 비어있는 Flux를 생성했으며, 이를 확인하기 위해 StepVerifier를 사용했다. Publisher인 emptyMono 객체와 emptyFlux 객체는 어떠한 객체도 방출(emit)하지 않고 완료되었음을 StepVerifier로 검증했다.
 
--> 역주: 따라서 StepVerifier로 Publisher 타입 스트림 객체가 생성되었다는 이벤트만 검증했다.
 
 ```
 @Test
