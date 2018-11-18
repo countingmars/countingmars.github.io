@@ -94,6 +94,7 @@ Reactive System 이라면 변화에 반응할 수 있어야 한다.
 
 ```
 interface Subject {
+	void register(Observer o);
 	void notify(String event);
 }
 interface Observer {
@@ -101,7 +102,7 @@ interface Observer {
 }
 
 Subject subject = new Subject() {
-	public void register(Observer o) { this.observers.add(o); }
+	@Override public void register(Observer o) { this.observers.add(o); }
 	@Override public void notify(String event) { observers.observe(event); }
 };
 subject.register(new Observer() { 
