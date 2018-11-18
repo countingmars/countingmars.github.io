@@ -127,7 +127,7 @@ observers.forEach(o -> executerService.submit(() -> o.observe(event)) }
 
 
 ### Publisher-Subscriber
-Pub-Sub 패턴은 중간에 메시지 브로커(Event Channel or Message Broker or Event Bus)를 추가해서 메시지를 수신하는 모듈이 존재한다는 점에서 Observer Pattern 과 차이가 있다. 
+Pub-Sub 패턴은 중간에 메시지 브로커(Event Channel or Message Broker or Event Bus)를 추가되었다는 점에서 Observer Pattern 과 차이가 있다. 
 
 
 메시지 브로커를 통해서 메시지를 라우팅하거나 필터링 할 수 있다. 
