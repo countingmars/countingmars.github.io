@@ -89,7 +89,9 @@ Reactive System 이라면 변화에 반응할 수 있어야 한다.
 이벤트가 발생했을 때, 이 이벤트의 관찰자들에게 통지(notify)해주기 때문이다. (ex, onClick 이벤트 핸들러)
 
 또한 이벤트를 발생시키는 Subject 객체와 이벤트를 소비하는 Observer 객체는 정의된 인터페이스를 상속하고 구현하기 때문에, 서로에 대한 의존성이 낮다고 볼 수 있다. 
-- Decoupling: Isolation and Independence
+- Decoupling: Isolation and Independence 
+
+
 ```
 interface Subject {
 	void notify(String event);
