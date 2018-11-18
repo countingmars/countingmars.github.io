@@ -115,6 +115,7 @@ subject.notify('first event');
 
 그런데 만약 하나의 Subject에 여러 옵져버가 등록되었고, 하나의 옵져버가 너무 느리다면 Thread를 활용해서 전체 옵져버들에게 이벤트를 전파하는 속도를 떨어뜨리지 않을 수 수 있다.
 Thread를 직접쓰기 보다는 ExecuterService가 편하다.
+
 ```
 observers.forEach(o -> executerService.submit(() -> o.observe(event)) }
 
@@ -136,13 +137,16 @@ Pub-Sub 패턴은 중간에 메시지 브로커(Event Channel or Message Broker 
    
 ### Observer + Iterator = RxObserver
 Iterator Pattern 은 메시지를 계속해서 발생시킬 수 있는 메서드(next)와, 메시지의 끝을 알리는 메서드(hasNext)를 제공한다.
+
 ```
 interface Iterator<T> {
 	T next();
 	boolean hasNext();
 } 
 ``` 
+
 Observer Pattern은 메시지를 Push할 수 있는 특성(notify)과 메시지를 수신할 수 있는 특성(register)을 가지고 있다.
+
 ```
 interface Subject {
 	void notify(String event);
@@ -152,6 +156,7 @@ interface Subject {
 ``` 
 
 이러한 두 패턴의 특징을 모두 가지게 되면 그 모양이 RxObserver의 형태와 유사하다.
+
 ```
 interface RxObserver {
 	void onNext(T next);
