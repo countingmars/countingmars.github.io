@@ -168,4 +168,4 @@ interface RxObserver {
 
 
 
-insert coin to be continued
+후편은 다음에 ... 
