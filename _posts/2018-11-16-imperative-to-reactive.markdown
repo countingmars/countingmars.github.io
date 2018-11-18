@@ -114,7 +114,7 @@ subject.register(new Observer() {
 subject.notify('first event');
 ```
 
-그런데 만약 하나의 Subject에 여러 옵져버가 등록되었고, 하나의 옵져버가 너무 느리다면 Thread를 활용해서 전체 옵져버들에게 이벤트를 전파하는 속도를 떨어뜨리지 않을 수 수 있다.
+그런데 만약 하나의 Subject에 여러 옵져버가 등록되었고, 하나의 옵져버가 너무 느리다면 Thread를 활용해서 전체 옵져버들에게 이벤트를 전파하는 속도를 떨어뜨리지 않을 수 있다.
 Thread를 직접쓰기 보다는 ExecuterService가 편하다.
 
 ```
