@@ -146,7 +146,7 @@ interface Iterator<T> {
 } 
 ``` 
 
-Observer Pattern은 메시지를 Push할 수 있는 특성(notify)과 메시지를 수신할 수 있는 특성(register)을 가지고 있다.
+Observer Pattern은 메시지를 Push할 수 있는 특성(notify)과 메시지를 수신(register)하거나 종료(unregister)할 수 있는 특성을 가지고 있다.
 
 ```
 interface Subject {
