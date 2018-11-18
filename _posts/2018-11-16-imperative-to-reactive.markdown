@@ -127,14 +127,13 @@ observers.forEach(o -> executerService.submit(() -> o.observe(event)) }
 
 
 ### Publisher-Subscriber
-내가 만약 메시지를 발생시키는 모듈을 구현해야 하는데 매 구현마다 비동기를 위해 ExecutorService 를 활용해야 하는 모양을 생각해보면 아주 번거롭다.
-
 Pub-Sub 패턴은 중간에 메시지 브로커(Event Channel or Message Broker or Event Bus)를 추가해서 메시지를 수신하는 모듈이 존재한다는 점에서 Observer Pattern 과 차이가 있다. 
 
 
 메시지 브로커를 통해서 메시지를 라우팅하거나 필터링 할 수 있다. 
 또한 Observer Pattern 에서 모호했던 비동기 처리의 책임을 메시지 브로커에게 맡길 수도 있겠다.
 
+* 내가 만약 메시지를 발생시키는 모듈을 구현해야 하는데 매 구현마다 비동기를 위해 ExecutorService 를 활용해야 하는 모양을 생각해보면 아주 번거롭다.
    
 ### Observer + Iterator = RxObserver
 Iterator Pattern 은 메시지를 계속해서 발생시킬 수 있는 메서드(next)와, 메시지의 끝을 알리는 메서드(hasNext)를 제공한다.
