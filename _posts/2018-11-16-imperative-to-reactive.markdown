@@ -10,6 +10,9 @@ categories: java
 
 
 
+ 
+ 
+ 
 ### Why Reactive?
 쓰레드 하나가 작업을 처리하는데 250ms가 걸린다고 가정한다면 1초당 4개의 작업을 처리할 수 있다. 
 만약 시스템의 총 쓰레드수가 500개라면 1초당 2000개의 작업을 처리해낼 수 있다.
@@ -23,18 +26,19 @@ categories: java
 예를 들어 블랙프라이데이 같은 ...
 
 
-유저는 끝없이 몰려들고 시스템은 한계를 시험받게 될 것이다.
-이러한 문제를 이미 경험한 기업들의 의견을 들어보는 건 어떨까?
+유저는 끝없이 몰려들고 시스템은 한계를 시험받게 된다.
+이러한 문제를 이미 경험한 기업들의 의견을 들어보자.
 
 - https://www.cnet.com/news/amazon-com-hit-with-outages/ 
 - https://www.forbes.com/sites/kellyclay/2013/08/19/amazon-com-goes-down-loses-66240-per-minute/#3fd8db37495c 
 - https://techcrunch.com/2011/11/25/walmart-black-friday/ 
 
 
- 
+  
+  
 ### Reactivity: Fundamental principles to build a robust system
 Reactivity는 사실 견고한 시스템을 만들기 위한 근본적인 원칙을 내포한 단어이다.
-시스템이 반응성(Reactivity)있다는 말의 의미는 그 어떤 변화에 긍정적으로 대응할 수 있다는 의미이기도 하다.
+시스템이 반응성(Reactivity)있다는 말의 의미는 변화에 긍정적으로 대응할 수 있다는 의미이기도 하다.
 
 
 즉, 내부 모듈의 실패를 고립(isolation)시켜서 장애가 전파되지 않게 해야하고, 
