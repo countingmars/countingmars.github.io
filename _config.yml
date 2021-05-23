@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Coding episodes
-subtitle: "just for fun"
+title: mars's coding episodes for fun
+subtitle:
 email: countingmars@gmail.com
 name: Mars Kang
 description: >
