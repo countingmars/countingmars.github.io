@@ -34,7 +34,7 @@ nullableAge?.toChar()
 
 그리고 nullable 우주에서 non-nullable 우주로 이동함으로써 null-safety라는 평화를 얻을 수 있습니다.
 
-
+<br />
 
 # super-type과 sub-type
 자바의 최상위 타입은 Object 입니다. **코틀린의 최상위 타입은 Any?** 입니다. 이 말의 의미는 <ins>Any 타입은 Any?의 서브 타입</ins>이라는 의미입니다.
