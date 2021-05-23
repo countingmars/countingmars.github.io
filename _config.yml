@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: How many Mars are there
-subtitle: "Is it near here?"
+title: Coding episodes
+subtitle: "just for fun"
 email: countingmars@gmail.com
 name: Mars Kang
 description: >
