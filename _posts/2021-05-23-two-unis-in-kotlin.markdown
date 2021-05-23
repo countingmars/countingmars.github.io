@@ -34,7 +34,7 @@ nullableAge?.toChar()
 
 
 # super-type과 sub-type
-자바의 최상위 타입은 Object 입니다. **코틀린의 최상위 타입은 Any?** 입니다. 이 말의 의미는 <u>Any 타입은 Any?의 서브 타입</u>이라는 의미입니다.
+자바의 최상위 타입은 Object 입니다. **코틀린의 최상위 타입은 Any?** 입니다. 이 말의 의미는 <ins>Any 타입은 Any?의 서브 타입</ins>이라는 의미입니다.
 
 <img src="https://miro.medium.com/max/129/0*4cfsgakE87aFmIQm" width="100px" style="width:100px">
 
