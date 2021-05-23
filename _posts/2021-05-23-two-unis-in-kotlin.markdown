@@ -9,7 +9,7 @@ categories: episodes
 우주 사이를 이동하기 위해서는 막대한 에너지를 사용하는 비프로스트를 이용하여 점프해야 합니다.
 
 
-그림: 비프로스트로 다른 우주로 이동하는 변수들
+**그림: 비프로스트로 다른 우주로 이동하는 변수들**
 ![그림: 비프로스트로 다른 우주로 이동하는 변수들](https://miro.medium.com/max/500/0*mm6Xj-kaBsJATUX9)
 
 <br /><br />
@@ -22,8 +22,10 @@ categories: episodes
 **코드: ?를 사용하여 nullable 우주를 탈출하는 장면**
 {% highlight kotlin %}
 
+
 var nullableAge: Int? = null
 nullableAge?.toChar()
+
 
 {% endhighlight %}
 
@@ -56,7 +58,9 @@ nullableAge?.toChar()
 **코드: 무지한 변수 Age의 탄생 장면**
 {% highlight kotlin %}
 
+
 val age: Int = 1
+
 
 {% endhighlight %}
 
