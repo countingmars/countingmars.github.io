@@ -12,7 +12,10 @@ categories: episodes
 **그림: 비프로스트가 변수들을 다른 우주로 보내는 장면**
 <img src="https://miro.medium.com/max/500/0*mm6Xj-kaBsJATUX9" align="left">
 
-<br /><br />
+<br />
+<br />
+<br />
+
 
 # non-nullable과 nullable
 코틀린은 non-nullable 우주와 nullable 우주 2개가 존재합니다. 다행히 엄청난 진화를 이루어낸 코틀린은 비프로스트를 이용하지 않고도 우주 사이를 빠르게 이동할 수 있습니다.
