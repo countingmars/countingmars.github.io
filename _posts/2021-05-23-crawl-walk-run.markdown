@@ -12,6 +12,8 @@ categories: episodes
 - 절대 포기하지 않기, 심지어 거의 목적지에 도달했지만 다시 전진하기 위해 많은 단계를 후퇴해야 하는 힘 빠지는 경험을 할 때에도.
 
 
+
+
 ### 리더가 따라야 할 10 베스트 프랙티스
 1. 속도보다 품질에 집중하라. 현실적인 타임라인을 설정하고 결국에는 큰 효과를 내는작은 목표를 수립하라.
 2. 예상치 못한 상황을 예상하라. 장애물은 발생할 것이고 피할 수 없다. 당신이 혁신가가 되어 놀라운 성과를 내는 것을 장애물이 멈추지 못하게 하라. 의지가 있다면 길이 있다.
@@ -26,6 +28,8 @@ categories: episodes
 
 
 변화는 쉽지 않다. 때로는 느리게 진행되는 여정일테지만 성급해지지 말고 작은 행동이 종종 거대한 효과를 냄을 기억하자.
+
+
 
 See [source](https://www.forbes.com/sites/forbescommunicationscouncil/2020/09/24/ten-leadership-strategies-to-crawl-walk-run-your-way-to-success/?sh=5e8f28393372)
 
