@@ -34,14 +34,12 @@ nullableAge?.toChar()
 
 
 # super-type과 sub-type
-자바의 최상위 타입은 Object 입니다. 코틀린의 최상위 타입은 Any? 입니다. 이 말의 의미는 Any 타입은 Any? 의 서브 타입이라는 의미입니다.
+자바의 최상위 타입은 Object 입니다. **코틀린의 최상위 타입은 Any?** 입니다. 이 말의 의미는 <u>Any 타입은 Any?의 서브 타입</u>이라는 의미입니다.
 
-**그림: Any의 조상 Any?** 
 <img src="https://miro.medium.com/max/129/0*4cfsgakE87aFmIQm" width="100px" style="width:100px">
 
 그런데 이 관계는 스트링 타입에도 적용됩니다.
 
-**그림: String의 조상 String?**
 <img src="https://miro.medium.com/max/210/0*eK2eXZ2X_0-s7g_7" width="150px" style="width:150px">
 
 이 규칙은 심지어 내가 만든 클래스에도 적용됩니다. 만약 내가 Cat 클래스를 만들었다면 자동으로 상위 타입은 Cat? 가 됩니다. 그리고 Any? 타입은 모든 것의 최상위 타입이므로 Cat? 역시도 Any? 타입의 하위 타입이 됩니다.
@@ -64,7 +62,6 @@ val age: Int = 1
 
 {% endhighlight %}
 
-<br />
 <br />
 
 # 타노스
