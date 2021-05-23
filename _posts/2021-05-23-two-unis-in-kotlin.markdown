@@ -74,7 +74,7 @@ nullable 우주에서의 변수는 null 혹은 non-null 둘 중 하나의 상태
 
 <p align="left">
 그림: 타노스의 핑거스냅(npe)을 막고 있는 Any 타입들
-<img src="https://miro.medium.com/max/664/0*V-Yzh_-bB4FlmY45" width="400px" style="width:400px">
+<img src="https://miro.medium.com/max/664/0*V-Yzh_-bB4FlmY45" width="400px" style="width:400px" align="left">
 </p>
 <br />  
    
