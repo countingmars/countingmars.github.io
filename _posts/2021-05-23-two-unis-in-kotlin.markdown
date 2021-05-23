@@ -10,7 +10,7 @@ categories: episodes
 일반적으로 우주 사이를 이동하기 위해서는 막대한 에너지를 사용하는 비프로스트를 이용하여 점프해야 합니다.
 
 **그림: 비프로스트가 변수들을 다른 우주로 보내는 장면**
-![그림: 비프로스트로 다른 우주로 이동하는 변수들](https://miro.medium.com/max/500/0*mm6Xj-kaBsJATUX9)
+<img src="https://miro.medium.com/max/500/0*mm6Xj-kaBsJATUX9" style="width: 200px">
 
 <br /><br />
 
