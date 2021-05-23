@@ -10,7 +10,7 @@ categories: episodes
 일반적으로 우주 사이를 이동하기 위해서는 막대한 에너지를 사용하는 비프로스트를 이용하여 점프해야 합니다.
 
 **그림: 비프로스트가 변수들을 다른 우주로 보내는 장면**
-<img src="https://miro.medium.com/max/500/0*mm6Xj-kaBsJATUX9">
+<img src="https://miro.medium.com/max/500/0*mm6Xj-kaBsJATUX9" align="left">
 
 <br /><br />
 
@@ -73,7 +73,7 @@ nullable 우주에서의 변수는 null 혹은 non-null 둘 중 하나의 상태
 <br />
 
 **그림: 타노스의 핑거스냅(npe)을 막고 있는 Any 타입들**
-<img src="https://miro.medium.com/max/664/0*V-Yzh_-bB4FlmY45" width="400px" style="width:400px">
+<img src="https://miro.medium.com/max/664/0*V-Yzh_-bB4FlmY45" width="400px" style="width:400px" align="left">
 
 <br />  
    
